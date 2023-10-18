@@ -1,6 +1,5 @@
-.header-wraper{  background-color: aquamarine;
-}
-.div-navigation{   background-color: #878fdd;
+/*Header*/
+.div-navigation{ 
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -21,6 +20,9 @@
     padding: 24px;
     font-family: 'Inter', sans-serif;
 }
+.button:hover {
+    background-color: #F84646;
+}
 .back-photo{
     background-image: url(../images/Photo.png);
     background-repeat: no-repeat;
@@ -35,7 +37,7 @@
     background-image: url(../images/Background.png);
     width: 828px;
     height: 458px;
-    top: 161px;
+    top: 160px;
     position: absolute;
     z-index: 2;
 }
@@ -54,6 +56,7 @@
     font-weight: 700;
     font-size: 60px;
 }
+/*Section1*/
 .section1{
     display: flex;
     justify-content: center;
@@ -61,7 +64,6 @@
     margin-top: 180px;
 }
 .sect1-container{
-    background-color: bisque;
     width: 1220px;
     height: 458px;
     display: flex;
@@ -74,12 +76,14 @@
     height: 454px;
 }
 .text{
+    margin-top: 15px;
     width: 585px;
     height: 454px;
 }
 .text h5{
     font-weight: 500;
     font-size: 18px;
+    font-family: 'Inter', sans-serif;
 
 }
 .text h2{
@@ -87,76 +91,121 @@
     font-size: 40px;
     margin-top: 16px;
     margin-bottom: 11px;
+    font-family: 'Poppins', sans-serif;
+    
 }
 .text p{
     font-weight: 400;
     font-size: 18px;
     line-height: 26.31px;
+    font-family: 'Inter', sans-serif;
 }
+.icons-box{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin-top: 30px;
+}
+.icons-box h4{
+    margin-left: 10px;
+    color: #7D7D7D;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+.icons-box p{
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #37393F;
+    font-family: 'Inter', sans-serif;
 
-/* bottom*/
-.section2{background-color: aliceblue;
-    display: flex;
-    justify-content: center;
-    align-self: center;
 }
-.sect1-container2{   background-color: aquamarine;
+.icons-info{
+    display: flex;
+    width: 360px;
+    height: 48px;
+}
+.icons-info img{
+    background-color: #F4F4F4;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+}
+.div-txt{
+    margin-left: 10px;
+    width: 300px;
+    height: 48px;
+}
+/*FORM STYLES*/
+.form-box{
     width: 1220px;
-    height: 649px; 
-    display: flex;
-    justify-content: space-between;
+    height: 649px;
+    margin: 0 auto;
     margin-top: 100px;
+    margin-bottom: 40px;
 }
-.text2{text-align: center;
-    width: 431px;
-    height: 86px;
-    margin-left: 394.5px;
+.form-texts{
+    text-align: center;
+    margin-bottom: 40px;
 }
-.text2 h4{
+.form-texts h5{
     font-weight: 500;
     font-size: 18px;
+    line-height: 21.78px;
     margin-bottom: 16px;
+    font-family: 'Inter', sans-serif;
 }
-text2 h2{
+.form-texts h2{
     font-weight: 700;
     font-size: 40px;
     line-height: 48.4px;
+    font-family: 'Manrope', sans-serif;
 }
-
-
-
-/*footer*/
-.footer{ 
-    background-color:#37393F;
-    width: 1920px;
-    margin-top: 150px;  
-}
-.footer-box{
-    width:1.220px;
-    height: 513px;
+.input-info{
     display: flex;
-    margin-left: 350px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 28px;
+    column-gap: 38px;
 }
-.logo-div{
-    width: 200px;
-    height: 38px;
-    display: flex;
+.input-info  [type="text"],[type="email"],[type="tel"]:focus {
+    outline: none;
 }
-.logo-div img{
-    color: white;
+.input-info [type="text"],[type="email"],[type="tel"] {
+    width: 591px;
+    height: 65px;
+    border: none; 
+    border-bottom: 2px solid red;
 }
-.info{ background-color: #4f5161;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    width: 659.01px;
-    height: 243px;
-    margin-top: 180px;
-    font-weight: 400;
+.textarea{
+    width: 1220px;
+    height: 222px;
+    margin-top: 28px;
+    border: none;
+    border-bottom: 2px solid red;
+}
+.textarea:focus {
+    outline: none;
+}
+.form-button{
+    background-color: #F84646;
+    width: 184px;
+    height: 65px;
+    font-weight: 600;
     font-size: 18px;
-
+    border: none;
+    margin-top: 46px;
+    margin-left: 518px;
+    font-family: 'Inter', sans-serif;
+    color: white;
 }
-    
+.form-button:hover {
+    background-color:#6B77E5;
+}
+
+
+
 
 
 
